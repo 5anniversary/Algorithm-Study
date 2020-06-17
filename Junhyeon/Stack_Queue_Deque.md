@@ -106,7 +106,7 @@ public struct Queue<T> {
     }
     
     // Front에서 데이터 출력, 삭제 
-    public mutating func dequque() -> T? {
+    public mutating func dequue() -> T? {
         return isEmpty ? nil : storage.removeFirst()
     }
     
@@ -115,7 +115,7 @@ public struct Queue<T> {
     }
     
     public var peek: T? {
-        return storage.first ?? T.self as! T
+        return storage.first
     }
 
     public var count: Int? {
